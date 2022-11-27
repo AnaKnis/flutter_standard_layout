@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: makeAppTheme(),
       home: const WelcomeView(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const WelcomeView(),
+      },
     );
   }
 }
